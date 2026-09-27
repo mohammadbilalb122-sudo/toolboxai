@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://toolboxai-gamma.vercel.app/"),
   verification: {
     google: "g9wQh6M2yyGOCO1aKb4PkRGiB9p9N3-iOS78llVpfoA",
   },
