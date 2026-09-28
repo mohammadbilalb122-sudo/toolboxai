@@ -144,7 +144,7 @@ export default function Home() {
             return (
               <li key={tool.key} className="flex items-center gap-2">
                 <Link
-                  href={`/${tool.categoryId}?tool=${encodeURIComponent(tool.id)}`}
+                  href={tool.categoryId === "pdf" && tool.id === "split" ? "/pdf/split" : `/${tool.categoryId}?tool=${encodeURIComponent(tool.id)}`}
                   className="min-w-0 flex-1 text-sm text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
                 >
                   <span className="block truncate">{tool.name}</span>
@@ -252,7 +252,7 @@ export default function Home() {
                 {searchResults.map((tool) => (
                   <div key={tool.key} className="flex items-center rounded-xl bg-white dark:bg-gray-800 shadow border border-gray-100 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors">
                     <Link
-                      href={`/${tool.categoryId}?tool=${encodeURIComponent(tool.id)}`}
+                      href={tool.categoryId === "pdf" && tool.id === "split" ? "/pdf/split" : `/${tool.categoryId}?tool=${encodeURIComponent(tool.id)}`}
                       className="min-w-0 flex-1 p-5"
                     >
                       <span className="font-semibold text-gray-800 dark:text-white">{tool.name}</span>

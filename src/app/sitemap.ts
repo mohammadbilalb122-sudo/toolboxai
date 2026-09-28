@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getSiteOrigin } from "@/lib/site-origin";
 
-const routes = ["", "/pdf", "/image", "/qr", "/text", "/writing", "/calculator", "/developer"];
+const routes = ["", "/pdf", "/pdf/split", "/image", "/qr", "/text", "/writing", "/calculator", "/developer"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const origin = await getSiteOrigin();
