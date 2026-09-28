@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   verification: {
     google: "g9wQh6M2yyGOCO1aKb4PkRGiB9p9N3-iOS78llVpfoA",
   },
+  other: {
+    "google-adsense-account": "ca-pub-5619746461315471",
+  },
   title: {
     default: "ToolBoxAI - All-in-One Online Tools",
     template: "%s | ToolBoxAI",
